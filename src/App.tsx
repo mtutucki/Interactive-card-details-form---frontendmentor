@@ -1,9 +1,13 @@
-import mobileBackground from './assets/background/bg-main-mobile.png'
+import { CardBack } from './components/Card/CardBack';
 
 function App() {
   return (
     <>
-      <div className='min-h-[30vh]'>elo</div>
+      <div className='p-10 relative min-h-[30vh] bg-mobile-background bg-center bg-cover'>
+        <div className='flex justify-end'>
+          <CardBack />
+        </div>
+      </div>
     </>
   );
 }
