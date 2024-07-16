@@ -1,11 +1,19 @@
+import { useState } from 'react';
 import { CardBack } from './components/Card/CardBack';
+import { CardFront } from './components/Card/CardFront';
 
 function App() {
+  const [cardNumber] = useState('2233322222333355');
+  const [cvc] = useState('232');
   return (
     <>
-      <div className='p-10 relative min-h-[30vh] bg-mobile-background bg-center bg-cover'>
+      <div className='flex px-5 pt-8 pb-12 flex-col justify-center relative bg-mobile-background  bg-cover'>
         <div className='flex justify-end'>
-          <CardBack />
+          <CardBack cvc={cvc} />
+        </div>
+
+        <div className='flex'>
+          <CardFront cardNumber={cardNumber} />
         </div>
       </div>
     </>

@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         'mobile-background': "url('./assets/background/bg-main-mobile.png')",
+        'card-background': "url('./assets/card/bg-card-front.png')",
       },
     },
   },
