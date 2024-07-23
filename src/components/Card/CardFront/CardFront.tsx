@@ -1,4 +1,5 @@
-import useFormattedCardNumber from '../../hooks/useFormatCardNumber';
+
+import useFormattedCardNumber from '../../../hooks/useFormatCardNumber';
 import './CardFront.css';
 
 type CardFrontProps = {
